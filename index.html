@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somani Ice-Creams</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header_left">
+          <img class="logo_img" src="logo.avif" />
+          <div class="logo">
+            SOMANI <br />
+            ICE-CREAMS
+          </div>
+        </div>
+        <div class="contact-info">
+          <div>Email: yourbusiness@example.com</div>
+          <div>Phone: 123-456-7890</div>
+        </div>
+      </div>
+      <button class="menu-btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+      <div class="menu-bar">
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about-us')">About Us</a>
+        <a onclick="showSection('products-services')">Our Products</a>
+        <a onclick="showSection('contact-us')">Contact Us</a>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="section active">
+        <div class="section-title"></div>
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="ice cream home page.jpg"
+              alt="Product Image"
+              class="product-image"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="horizontal Ice-cream.jpg"
+              alt="Product Image"
+              class="product-image"
+            />
+          </div>
+          <div class="slide">
+            <img src="kulfi.jpg" alt="Product Image" class="product-image" />
+          </div>
+        </div>
+        <div class="welcome-message">WELCOME TO SOMANI ICE-CREAMS</div>
+        <p>
+          We <b>“Somani Ice-Creams”</b> are one of the foremost supplier of
+          cone, cup, kulfi, and family pack etc. all types of ice-creams. All
+          the products are hygienically packaged and are popular for freshness,
+          purity, rich aroma, flavor and nutritive value and organic products as
+          well. Our personnel works hard to deliver quality products to our
+          esteemed customers. With the support of our professionals, we able to
+          cater to the diverse requirements of the customer within a committed
+          time frame.
+        </p>
+      </div>
+      <!--<div id="about-us" class="section sub_section">
+            <div class="section-title"><h2>About Us</h2></div><br/>
+				<div class="about-flex">
+					<div class="aboutus">
+					<img src="gargoyle-8791108_640.jpg" alt="Ice-CREAMS"></img>
+				
+				</div>
+				<div class="aboutus-content">
+					<h1>Hello World</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+            <p> <b>Somani Ice-Cream,</b> headquartered in Pune, Maharashtra, has been a prominent player in the Ice-Cream supplier, export and trader industry since its inception in 2024.
+   			   Under the visionary leadership of <b>Mr. Deepak Nitin Somani</b>, the company has established itself as a trusted name in providing high-quality Ice-Cream products to both domestic and international markets. 
+			   Specializing in Ice-based products, Somani Ice-Cream offers a diverse range of items tailored to meet various consumer needs. Their product portfolio includes A Grade Pista Ice-Cream, Vanila Ice-Cream, Chocolate Ice-Cream, Strawberry Ice-Cream, and Butterscotch Ice-Cream.
+    		   These Ice-Creams are produced using state-of-the-art processes, ensuring the preservation of the fruit's nutritional value and flavor.
+               In addition to Ice-Cream , the company also exports Cakes and Dairy products, catering to the growing demand for healthy snack options globally. Whether it's the freshness of raw fruits, Somani Ice-Cream maintains rigorous quality standards throughout its production and distribution processes. 
+			   With a commitment to excellence, Somani Ice-Cream prioritizes customer satisfaction by consistently delivering premium products that exceed expectations. Their adherence to stringent quality control measures, coupled with efficient supply chain management, has earned them a reputation for reliability and integrity in the industry.
+               Beyond business success, Somani Ice-Cream is dedicated to promoting sustainable practices and supporting local Dairy communities. By fostering mutually beneficial relationships with farmers and stakeholders, the company ensures a responsible and ethical supply chain, contributing to the economic development of the region.
+               Driven by a passion for innovation and a dedication to quality, Somani Ice-cream continues to expand its presence in the global market while remaining true to its core values of integrity, excellence, and customer satisfaction.
+            </p>
+        </div><br/>-->
+      <div id="about-us" class="section sub_section">
+        <div class="section-title"><h2>About Us</h2></div>
+        <br />
+        <div class="section about-us-container">
+          <div class="about-us-content">
+            <img src="somani.jpg" alt="Business Image" class="business-image" />
+            <div class="quote-and-description">
+              <p class="business-quote">
+				"Becoming isn’t about arriving somewhere or achieving a certain
+                aim. I see it instead as forward motion, a means of evolving, a
+                way to reach continuously toward a better self. The journey
+                doesn’t end."
+              </p>
+            </div>
+          </div>
+          <div class="business-description">
+            <p>
+				This is where your paragraph explaining the business will start.
+				You can detail the history, mission, values, and other important
+				aspects of your business.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="products-services" class="section sub_section">
+        <div class="section-title"><h2>Our Products</h2></div>
+        <div class="products">
+          <div class="product">
+            <img src="pista.avif" alt="Product 1" />
+            <div class="product-description">
+              <h2>Pista</h2>
+              <p><strong>Color:</strong> Green</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Pista</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="chocolate.jpg" alt="Product 2" />
+            <div class="product-description">
+              <h2>Chocolate</h2>
+              <p><strong>Color:</strong> Brown</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Chocolate</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="strawberry.jpg" alt="Product 3" />
+            <div class="product-description">
+              <h2>Strawberry</h2>
+              <p><strong>Color:</strong> Red</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Strawberry</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="pista.avif" alt="Product 4" />
+            <div class="product-description">
+              <h2>Pista</h2>
+              <p><strong>Color:</strong> Green</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Pista</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="chocolate.jpg" alt="Product 5" />
+            <div class="product-description">
+              <h2>Chocolate</h2>
+              <p><strong>Color:</strong> Brown</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Chocolate</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+          <div class="product">
+            <img src="strawberry.jpg" alt="Product 6" />
+            <div class="product-description">
+              <h2>Strawberry</h2>
+              <p><strong>Color:</strong> Red</p>
+              <p><strong>Cultivation Type:</strong> Organic</p>
+              <p><strong>Shelf Life:</strong> 6 months</p>
+              <p><strong>Feature:</strong> Nutritious, Healthy</p>
+              <p><strong>Flavour:</strong> Strawberry</p>
+              <p><strong>Packaging Type:</strong> Box</p>
+            </div>
+          </div>
+        </div>
+        <!--<p>Detail your products or services here. Highlight what you offer and why it stands out.</p>-->
+      </div>
+      <div id="contact-us" class="section sub_section">
+        <h1>Contact Us:</h1>
+        <div class="contact-section">
+          <div class="contact-info-left">
+            <h3>Contact Person:</h3>
+            <p>Mr. Deepak Nitin Somani</p>
+
+            <h3>Address:</h3>
+            <p>
+              Nagar Khana Road, Jamner, Dist- Jalgaon, Maharashtra, India 424206
+            </p>
+
+            <h3>Call Us:</h3>
+            <p>7387262527</p>
+
+            <h3>Email:</h3>
+            <p>deepaksomani2000@gmail.com</p>
+
+            <h3>Web Address:</h3>
+            <p>www.somaniicecreams.com</p>
+
+            <h3>GST Number:</h3>
+            <p>84554113338866</p>
+          </div>
+          <div class="contact-form-right">
+            <form id="contact-form">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label for="country">Country:</label>
+              <select id="country" name="country" required>
+                <option value="">Select Country</option>
+              </select>
+
+              <label for="phone">Mobile/Phone:</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone"
+                required
+              />
+
+              <label for="product">Product Looking For:</label>
+              <select id="product" name="product" required>
+                <option value="">Select Product</option>
+                <option value="Pista">Pista</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Butterscotch">Butterscotch</option>
+                <option value="American Dryfruit">American Dryfruit</option>
+              </select>
+
+              <label for="message">Enquiry Details:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Your Enquiry Details"
+                required
+              ></textarea>
+
+              <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="resetForm()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">Why Choose Us:</div>
+      <br />
+      <!-- <div>Email: yourbusiness@example.com</div>
+        <div>Phone: 123-456-7890</div> -->
+      <!--<h2>There are some factors that have made us a world-renowned merchant exporter:</h2><br><br>-->
+      <div class="footer-row">
+        <div class="footer-item">
+          <h3>Competitive Price</h3>
+          <p>
+            We strive to offer our customers the best quality products at
+            competitive industry prices.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Packaging</h3>
+          <p>
+            We use high quality packaging materials and equipment to ensure the
+            safety of products in transit and delivery.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Timely Delivery</h3>
+          <p>
+            We have adopted innovative methods and procedures to ensure that
+            orders are delivered within a specified time frame.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Strong Vendor Base</h3>
+          <p>
+            We select our suppliers on the basis of certain factors, such as
+            quality of the material used, production capacity, past customers
+            served, financial stability, delivery time, and the ability to
+            deliver bulk orders.
+          </p>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-item">
+          <h3>Flexibility</h3>
+          <p>
+            We possess the ability to produce goods according to the
+            requirements of the purchaser. We have an ethical corporate policy
+            and are honest in all our dealings.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Personalized Services</h3>
+          <p>
+            We follow a client-focused approach and thus provide our customers
+            with highly customized services.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Client Satisfaction</h3>
+          <p>
+            We recognize and deliver realistic solutions to our customers'
+            desires and demands.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3>Product Quality</h3>
+          <p>
+            Quality in all aspects, such as dimensional accuracy, design,
+            printing, labeling, and packaging.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--<script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("BzZBcvsGOCULKNSr_"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
