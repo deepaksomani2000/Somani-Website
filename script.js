@@ -23,13 +23,20 @@ function showSection(sectionId) {
         });
 });*/
 
+window.addEventListener('click',(e)=> {
+    if(!document.querySelector('.menu-bar').contains(e.target) && !document.querySelector('.menu-btn').contains(e.target)) {
+        console.log('aaaa')
+        document.querySelector('.menu-bar').classList.remove('show');
+    }
+})
+
 function toggleHideMenu() {
-    document.querySelector('.menu-bar').classList.toggle('hidden');
+    document.querySelector('.menu-bar').classList.toggle('show');
 }
 
 document.querySelector('.menu-btn').addEventListener('click', e=> {
     toggleHideMenu();
-    e.classList.add('change');
+    // e.classList.add('change');
 })
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {

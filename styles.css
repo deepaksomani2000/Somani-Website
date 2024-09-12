@@ -64,7 +64,11 @@ header .logo {
 
 @media (max-width: 768px) {
 	.menu-bar {
+		display: none;
 		position: absolute;
+		justify-content: flex-start;
+		width: 50%;
+		gap: 0 !important;
 		top: 2rem;
 		right: 0.5rem;
 		z-index: 99999;
@@ -72,7 +76,10 @@ header .logo {
 	}
 	.menu-bar a {
 		font-size: 1.25rem;
-		padding: 0.5rem;
+		padding: 1rem 0.5rem;
+	}
+	.menu-bar a:not(:last-of-type) {
+		border-bottom: solid 1px #0F0F0F;
 	}
 }
 
@@ -82,7 +89,10 @@ header .logo {
 	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
+	background-color: transparent;
+	border: none;
 }
+
 @media (max-width: 768px) {
 	.menu-btn {
 		display: inline-block;
@@ -91,10 +101,10 @@ header .logo {
 
 
 .bar1, .bar2, .bar3 {
-	width: 25px;
-	height: 5px;
-	background-color: #333;
-	margin: 2px 0;
+	width: 30px;
+	height: 4px;
+	background-color:#fff;
+	margin: 5px 0;
 	transition: 0.4s;
   }
 
@@ -205,6 +215,7 @@ header .logo {
 @media (max-width: 768px) {
 	.about-us-content {
 		flex-direction: column;
+		margin : 20px;  /*added new on 02-09-24*/
 	}
 
 	.business-description {
@@ -465,6 +476,6 @@ img {
 	height: 600px;
 }
 
-.hidden {
-	display: none;
+.show {
+	display: flex !important;
 }
