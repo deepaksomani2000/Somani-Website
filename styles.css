@@ -251,6 +251,7 @@
 	/* padding-top: 20px; */
 	padding: 20px 2rem 0px;
   }
+
   .footer-content {
 	text-align: center;
 	font-size: 2rem;
@@ -291,8 +292,6 @@
   
   .footer-overlay {
 	position: absolute;
-	/* top: 0;
-	  left: 0; */
 	width: 100%;
 	min-height: 100%;
 	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
@@ -351,6 +350,26 @@
 	margin-top: 1rem;
   }
   
+  @media (max-width: 768px) {
+	.footer-grid {
+	  grid-template-columns: 1fr; /* Single column layout */
+	  gap: 20px;
+	  padding: 0 10px;
+	}
+  
+	.footer-item {
+	  padding: 10px;
+	}
+  
+	.footer-content h2 {
+	  font-size: 20px;
+	}
+  
+	.footer-item h3 {
+	  font-size: 16px;
+	}
+  }  
+
   .contact-us form {
 	display: flex;
 	flex-direction: column;
