@@ -436,7 +436,7 @@
 	}
   }
   
-  .contact-form-right {
+  /* .contact-form-right {
 	width: 100%;
 	max-width: 30rem;
 	border: 1px solid #000;
@@ -448,23 +448,23 @@
 	.contact-info-left {
 	  margin: auto;
 	}
-  }
+  } */
   
-  .contact-info-left {
+  /* .contact-info-left {
 	/* width: 45%; */
 	/* float: left; */
-	padding: 20px;
+	/* padding: 20px;
 	max-width: 40%;
 	box-sizing: border-box;
 	text-align: left;
 	border: 1px solid #ccc;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	width: 540px;
+	width: 540px; */
 	/* height : 527px; */
 	/* margin-left : 90px;
 	  margin-top : 35px; */
-	background: #b9d9eb;
-  }
+	/* background: #b9d9eb;
+  } */ 
   /*.contact-info-left h3:not(:first-child) {
 	  margin-top: 25px;
   }*/
@@ -472,16 +472,16 @@
 	  margin-top: 2px;
   }*/
   /* Increase spacing between sections */
-  .contact-info-left h3 {
+  /* .contact-info-left h3 {
 	margin-top: 35px;
 	margin-bottom: 10px; /* Add some space below each heading */
-  }
+  /* }
   
   /* Adjust spacing for the first heading to avoid extra top margin */
-  .contact-info-left h3:first-child {
+  /* .contact-info-left h3:first-child {
 	margin-top: 0;
-  }
-  #contact-form {
+  } */
+  /* #contact-form {
 	display: flex;
 	flex-direction: column;
 	max-width: 600px;
@@ -494,12 +494,12 @@
   }
   #contact-form input,
   #contact-form select,
-  #contact-form textarea {
-	width: 100%;
-	padding: 8px; /* Increased padding */
-	font-size: 12px; /* Increased font size */
-	box-sizing: border-box; /* Ensures padding is included in the width */
-  }
+  #contact-form textarea { */
+	/* width: 100%; */
+	/* padding: 8px; Increased padding */
+	/* font-size: 12px; Increased font size */
+	/* box-sizing: border-box; Ensures padding is included in the width */
+  /* }
   #contact-form .form-buttons {
 	margin-top: 0.5rem;
 	flex-direction: column;
@@ -511,7 +511,7 @@
 	cursor: pointer;
 	background-color: grey;
 	color: white;
-  }
+  } */
   
   img {
 	max-width: 100%;
@@ -584,4 +584,106 @@
   .show {
 	display: flex !important;
   }
-  
+
+  .contact-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	flex-direction: column; /* Add this to stack items vertically on mobile */
+}
+
+.contact-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1rem;
+	width: 100%; /* Ensure it takes full width */
+}
+
+@media (max-width: 768px) {
+	.contact-section {
+		flex-direction: column;
+		align-items: center; /* Center items on mobile */
+	}
+	.contact-info-left,
+	.contact-form-right {
+		max-width: 90%; /* Adjust max width for mobile */
+		width: 100%; /* Ensure full width */
+		margin: 0 auto; /* Center items */
+	}
+}
+
+.contact-info-left {
+	padding: 20px;
+	max-width: 40%;
+	box-sizing: border-box;
+	text-align: left;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background: #b9d9eb;
+	width: 100%; /* Ensure full width */
+}
+
+.contact-info-left h3 {
+	margin-top: 35px;
+	margin-bottom: 10px; /* Add some space below each heading */
+}
+
+.contact-info-left h3:first-child {
+	margin-top: 0;
+}
+
+.contact-form-right {
+	width: 100%; /* Ensure full width */
+	max-width: 600px; /* Set a max width */
+	border: 1px solid #000;
+	padding: 1rem;
+	box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%; /* Ensure full width */
+	margin: 0 auto;
+}
+
+#contact-form label {
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: left;
+	width: 100%; /* Ensure full width */
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+	width: 100%;
+	padding: 8px; /* Increased padding */
+	font-size: 12px; /* Increased font size */
+	box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+#contact-form .form-buttons {
+	margin-top: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%; /* Ensure full width */
+}
+
+#contact-form .form-buttons button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: grey;
+	color: white;
+	width: 100%; /* Ensure full width */
+}
+
+@media (min-width: 769px) {
+	.contact-us {
+		flex-direction: row; /* Ensure row layout on larger screens */
+	}
+}
