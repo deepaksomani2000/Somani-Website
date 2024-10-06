@@ -389,20 +389,6 @@
 	display: flex;
 	gap: 10px;
   }
-  .contact-us form button {
-	padding: 10px 20px;
-	background-color: #28a745;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-  }
-  .contact-us form button[type="button"] {
-	background-color: #dc3545;
-  }
-  .contact-us form button:hover {
-	opacity: 0.9;
-  }
   .slider {
 	position: relative;
 	margin: 0 auto; /* Center the slider */
@@ -431,11 +417,6 @@
 	.contact-section {
 	  flex-direction: column-reverse;
 	}
-	/* .contact-info-left {
-	  /* max-width: 90% !important; */
-	  /* margin-left: 10px;
-	  margin-right: 10px; */
-	/* }  */
   }
   
   img {
@@ -580,7 +561,7 @@
 #contact-form .form-buttons {
 	margin-top: 0.5rem;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 10px;
 	width: 100%; /* Ensure full width */
 }
@@ -589,9 +570,30 @@
 	padding: 10px 20px;
 	font-size: 16px;
 	cursor: pointer;
-	background-color: grey;
-	color: white;
+	color: black;
 	width: 100%; /* Ensure full width */
+	border: none;
+	outline: none;
+	font-weight: 600;
+	transition: 0.5s;
+}
+
+/* Specific styles for Submit and Cancel buttons */
+#contact-form .form-buttons button[type="submit"] {
+    background-color: lightgreen; /* Light green for Submit button */
+}
+
+#contact-form .form-buttons button[type="submit"]:hover {
+	background-color:#40ea5f;
+}
+
+#contact-form .form-buttons button[type="button"] {
+    background-color: lightcoral; /* Light red for Cancel button */
+}
+
+#contact-form .form-buttons button[type="button"]:hover {
+	background-color: #e04545;
+
 }
 
 @media (min-width: 769px) {
