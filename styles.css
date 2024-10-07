@@ -203,9 +203,6 @@
   }
   .about-us-container {
 	display: block;
-	/* flex-direction: row;
-	  align-items: center;
-	  justify-content: space-between; */
 	margin-bottom: 20px;
   }
   
@@ -217,7 +214,7 @@
   @media (max-width: 768px) {
 	.about-us-content {
 	  flex-direction: column;
-	  margin: 20px; /*added new on 02-09-24*/
+	  margin: 20px;
 	}
   
 	.business-description {
@@ -248,7 +245,6 @@
   }
   .business-description {
 	clear: both;
-	/* padding-top: 20px; */
 	padding: 20px 2rem 0px;
   }
 
@@ -308,7 +304,6 @@
   
   .footer-item:hover .footer-overlay {
 	opacity: 1;
-	/* box-shadow: 0px 0px 4px 7px #e1e3e9; */
   }
   
   .footer-social {
@@ -389,23 +384,7 @@
 	display: flex;
 	gap: 10px;
   }
-   /* .slider {
-	position: relative;
-	margin: 0 auto; 
-	overflow: hidden;
-	object-fit: contain;
-  }
-  .slide {
-	object-fit: contain;
-  }  */
-  /* .slide img {
-	  height: 464px;
-  }  */
-
-  /* .active {
-	display: block;
-  } */
-
+  
   .slider {
     position: relative;
     margin: 0 auto; /* Center the slider */
