@@ -389,21 +389,40 @@
 	display: flex;
 	gap: 10px;
   }
-  .slider {
+   /* .slider {
 	position: relative;
-	margin: 0 auto; /* Center the slider */
+	margin: 0 auto; 
 	overflow: hidden;
 	object-fit: contain;
   }
   .slide {
 	object-fit: contain;
-  }
+  }  */
   /* .slide img {
 	  height: 464px;
-  } */
-  .active {
+  }  */
+
+  /* .active {
 	display: block;
-  }
+  } */
+
+  .slider {
+    position: relative;
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
+    width: 100%; /* Ensure the slider takes full width of the parent */
+}
+
+.slide {
+    display: none; /* Initially hide all slides */
+    width: 100%; /* Ensure slides take full width of the slider */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Show the first slide initially */
+.slide.active {
+    display: block;
+}
   
   .contact-section {
 	margin-top: 1rem;
