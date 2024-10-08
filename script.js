@@ -194,5 +194,3 @@ function showSlides() {
     slides[slideIndex - 1].classList.add('active');
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-
-
