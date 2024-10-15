@@ -9,6 +9,9 @@ function showSection(sectionId) {
     // Show the selected section
     var sectionToShow = document.getElementById(sectionId);
     sectionToShow.classList.add('active');
+
+    // Hide the menu after clicking an item
+    document.querySelector('.menu-bar').classList.remove('show');
 }
 
 window.addEventListener('click',(e)=> {
@@ -25,7 +28,14 @@ function toggleHideMenu() {
 document.querySelector('.menu-btn').addEventListener('click', e=> {
     toggleHideMenu();
     // e.classList.add('change');
-})
+});
+
+// Add event listeners to menu items
+document.querySelectorAll('.menu-bar a').forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelector('.menu-bar').classList.remove('show');
+    });
+});
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();

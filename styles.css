@@ -150,12 +150,44 @@
 	}
   }
   
-  .welcome-message {
+  /* .welcome-message {
 	text-align: center;
 	font-size: 2em;
 	margin: 20px 0;
 	font-weight: bold;
-  }
+  } */
+
+  .welcome-container {
+    text-align: center;
+    max-width: 800px; /* Set a max-width to ensure alignment */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+.welcome-message {
+    font-size: 2em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.description {
+    margin: 0 auto;
+    text-align: justify; /* Ensure the text is justify-aligned within the centered container */
+    padding: 0 20px; /*Optional: add padding to the sides */
+}
+
+@media (max-width: 768px) {
+    .welcome-message {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+
+    .description {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+        font-size: 1em; /* Adjust font size for better readability */
+    }
+}
+
   .products {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -248,10 +280,12 @@
 	font-weight: bold;
 	font-size: 1.2em;
 	font-style: italic;
+	/* text-align: justify; */
   }
   .business-description {
 	clear: both;
-	padding: 20px 2rem 0px;
+	padding: 20px 3rem 0px;
+	text-align: justify;
   }
 
   .footer-content {
