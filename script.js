@@ -41,12 +41,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault();
 
     // First, send the form data to your email
-    emailjs.sendForm('service_56alu1w', 'template_6ia21to', this)
+    emailjs.sendForm('service_a3998zt', 'template_zbdnhbo', this)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             
             // Now send the auto-reply to the customer
-            emailjs.send('service_56alu1w', 'template_vys47kb', {
+            emailjs.send('service_a3998zt', 'template_8jfgy98', {
                 name: event.target.name.value, // Adjust to your form field names
                 email: event.target.email.value, // Adjust to your form field names
             })
